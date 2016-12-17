@@ -25,12 +25,5 @@ const sendEmail = (emailData) => {
     .catch((e) => logger.error(`FAILURE: problem sending email. ${e.message}`));
 };
 
-const data = {
-    'FromEmail': 'thinkfulproject@gmx.com',
-    'FromName': 'SERVICE ALERTS',
-    'Subject': 'ALERT: a FooError occurred',
-    'Text-part': 'Something went wrong!!',
-    'Recipients': [{'Email': 'roger@smith.com'}]
-};
 
 module.exports = {sendEmail};
